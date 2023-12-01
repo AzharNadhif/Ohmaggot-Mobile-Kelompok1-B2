@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".DetailArticle1">
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:text="Budidaya Maggot Black Soldier Fly (BSF) Menjadi Solusi Bagi Sampah Organik dan Memiliki Potensi Ekonomi"
+            android:textSize="18sp"
+            android:textColor="@color/warna3"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/artikel1" />
+
+        <TextView
+            android:id="@+id/detailTgl"
+            android:layout_width="382dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_margin="11dp"
+            android:padding="8dp"
+            android:text="10 Januari 2023"
+            android:textColor="@color/warna4"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/detailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="14dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="15dp"
+            android:text="Tidak bisa dipungkiri, sampah merupakan konsekuensi dari adanya aktivitas manusia. Timbulan sampah akan meningkat seiring dengan pertumbuhan jumlah penduduk dan pola konsumsi masyarakat. Di Yogyakarta, berdasarkan data dari Badan Perencanaan dan Pembangunan Daerah pada tahun 2021, rata-rata volume sampah yang dihasilkan se-DIY sebanyak 1.133ton setiap harinya, dan 61,12% nya merupakan sampah organik hasil dari kegiatan domestik yang belum memiliki nilai ekonomis.
+            \n \nPengolahan sampah organik memerlukan teknologi yang tepat agar produk olahannya tidak menghasilkan sampah kembali. Teknologi biokonversi menggunakan maggot lalat Black Soldier Fly (BSF) dapat dimanfaatkan untuk mengonversi materi organik sehingga memiliki potensi ekonomi. Bahkan maggot BSF mampu mendegradasi sampah organik lebih cepat dibanding serangga lainnya. Selain itu, produk yang dihasilkan dari pengolahan sampah organik oleh maggot BSF memiliki nilai ekonomi yang tinggi. Sebagai contoh maggot BSF dapat menjadi sumber protein yang bisa dimanfaatkan sebagai alternatif pakan ternak, serta kasgot (bekas maggot) dapat digunakan sebagai solusi alternatif subtitusi pupuk NPK dari pemerintah.
+            \n \nUntuk memberi pengetahuan tentang tata cara pengolahan sampah organik dan manfaat yang diberikan oleh maggot lalat BSF, Selasa (10/1) PIAT UGM memberikan pelatihan budidaya maggot BSF bagi beberapa staf dan mahasiswa yang sedang mengikuti magang/PKL. Diharapkan dengan pelatihan budidaya maggot BSF ini akan meningkatkan pengetahuan dan ketrampilan peserta pelatihan untuk menyelesaikan masalah lingkungan hidup yang berhubungan dengan sampah organik melalui teknologi biokonversi."
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/detailSumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="11dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="https://piat.ugm.ac.id/2023/01/10/teknologi-biokonversi-budidaya-maggot-black-soldier-fly-bsf-menjadi-solusi-bagi-sampah-organik-dan-memiliki-potensi-ekonomi/"
+            android:textSize="12sp"
+            android:textColor="@color/warna4"/>
+
+    </LinearLayout>
+
+</ScrollView>

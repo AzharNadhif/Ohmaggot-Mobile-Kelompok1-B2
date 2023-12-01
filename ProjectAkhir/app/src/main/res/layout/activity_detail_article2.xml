@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".DetailArticle3">
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:text="Mahasiswa BBK UNAIR Kenalkan Budidaya Maggot sebagai Inovasi Atasi Sampah"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/warna3"/>
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/artikel3" />
+
+        <TextView
+            android:id="@+id/detailTgl"
+            android:layout_width="382dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_margin="11dp"
+            android:padding="8dp"
+            android:text="25 Juli 2023"
+            android:textColor="@color/warna4"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/detailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="14dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="15dp"
+            android:text="Pengolahan sampah organik menjadi salah satu permasalahan yang kerap ditemukan di berbagai daerah. Berdasarkan fakta tersebut, mahasiswa Belajar Bersama Komunitas (BBK) ke-2 yang diterjunkan di Desa Mertani, Kecamatan Karanggeneng, Kabupaten Lamongan mengenalkan budidaya maggot untuk mengatasi permasalahan tersebut.
+            \n \nPada Minggu (16/7/2023), tim BBK 1 dan 2 Mertani menyelenggarakan sosialisasi mengenai perkembangan fase hidup dan potensi maggot. Selain itu, tim yang Adhy Riadhy Arafah SH LL M (Adv) dampingi itu juga menyediakan bahan, alat, telur, serta bayi maggot untuk melakukan sosialisasi budidaya maggot. Arga selaku ketua BBK Mertani menceritakan bahwa tim juga melakukan pendampingan pada masyarakat setempat.
+            \n \n“Kami juga melakukan pendampingan terhadap semua fase hidup maggot. Mulai dari penetasan telur, perkembangan bayi ke fase dewasa yang siap mengonsumsi sampah organik, hingga fase pra-pupa. Kami juga sudah siapkan kandang khusus untuk maggot yang akan menetas dari pupa menjadi lalat BSF. Beberapa juga sudah berhasil jadi lalat BSF, kawin, dan mati,” tutur Arga.
+            \n \nHarapannya, masyarakat dapat melanjutkan kegiatan secara mandiri dan berkelanjutan, agar memberikan dampak yang maksimal bagi Desa Mertani. “Mengingat sebagian besar lahan dan mata pencaharian warga Mertani berhubungan dengan usaha tambak, budidaya maggot ini harapannya tidak hanya berguna untuk mengolah sampah, namun juga industri budidaya ikan,” harapnya."
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/detailSumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="11dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="https://unair.ac.id/mahasiswa-bbk-unair-kenalkan-budidaya-maggot-sebagai-inovasi-atasi-sampah/"
+            android:textSize="12sp"
+            android:textColor="@color/warna4"/>
+
+    </LinearLayout>
+
+</ScrollView>

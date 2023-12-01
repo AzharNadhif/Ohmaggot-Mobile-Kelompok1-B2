@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uploadGambar"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Total Pembayaran"
+            android:layout_weight="1.3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="Harga"
+            android:textAlignment="textEnd"
+            android:id="@+id/harga"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:scaleType="fitStart"
+            android:src="@drawable/bnilogo"/>
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1.8"
+            android:weightSum="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="Bank BNI"
+                android:textSize="20sp"
+                android:textColor="@color/warna4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:text="No. Rekening" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0963502310"
+                android:textSize="16sp"
+                android:textColor="@color/warna4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp"
+                android:text="Bayar pesanan anda ke nomor rekening diatas sebelum kembali untuk memesan produk selanjutnya."
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/border_text"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Unggah Bukti Pembayaran Anda"
+        android:textColor="@color/warna4"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="Setelah melakukan pembayaran lewat nomor rekening diatas, unggah bukti pembayaran berupa struk atau tangkapan layar apabila melakukan pembayaran melalui M-Banking."
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:src="@drawable/baseline_upload_file_24"
+            android:id="@+id/uploadimg"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Upload Bukti"
+        android:id="@+id/btn_Encode"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:backgroundTint="@color/warna3"/>
+</LinearLayout>

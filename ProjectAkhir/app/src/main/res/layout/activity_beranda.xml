@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".BerandaActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/warna4"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="130dp"
+            app:cardBackgroundColor="@color/warna2"
+            app:cardCornerRadius="20dp">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="20"
+                app:iss_delay="1000"
+                app:iss_period="1000"
+                app:iss_title_background="@drawable/default_gradient" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageSlider"
+            tools:ignore="MissingConstraints,NotSibling">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/produkName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/produkGambar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Produk"
+                        android:textColor="@color/warna4"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/produkGambar"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/marketplace" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ImagotName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imaggotGambar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="IMaggot"
+                        android:textColor="@color/warna4"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imaggotGambar"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/animalcare" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/bottomAppbar"
+       android:layout_gravity="bottom"
+       android:background="@color/warna1">
+
+       <Button
+           android:id="@+id/produk"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="15dp"
+           android:text="o"
+           android:textColor="@color/text_shadow"
+           android:background="@drawable/baseline_shopping_cart_24"/>
+
+       <Button
+           android:id="@+id/imaggot"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_marginLeft="135dp"
+           android:layout_marginTop="15dp"
+           android:text="o"
+           android:textColor="@color/text_shadow"
+           android:background="@drawable/baseline_library_books_24"/>
+
+       <Button
+           android:id="@+id/home"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_marginLeft="235dp"
+           android:layout_marginTop="15dp"
+           android:text="o"
+           android:textColor="@color/text_shadow"
+           android:background="@drawable/baseline_home_24"/>
+
+       <Button
+           android:id="@+id/profile"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_marginLeft="330dp"
+           android:layout_marginTop="15dp"
+           android:text="o"
+           android:textColor="@color/text_shadow"
+           android:background="@drawable/baseline_person_24"/>
+
+   </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

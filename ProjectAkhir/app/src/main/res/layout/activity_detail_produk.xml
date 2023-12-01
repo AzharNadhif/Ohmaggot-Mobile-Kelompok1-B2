@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".detailProduk">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/warna1">
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp">
+            <Button
+                android:background="@drawable/baseline_keyboard_arrow_left_24"
+                android:id="@+id/backHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_marginLeft="100dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageviewDetail"
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounder_image"/>
+
+            <TextView
+                android:id="@+id/productnamDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageviewDetail"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                android:text="Product Name"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/warna4"/>
+
+            <TextView
+                android:id="@+id/productpriceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productnamDetail"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="50dp"
+                android:text="Product Name"
+                android:textSize="16sp"
+                android:textColor="@color/warna4"/>
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="2dp"
+                android:background="@drawable/border_text"
+                android:layout_below="@+id/productpriceDetail"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/warna4"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45dp"
+                android:text="Tulisan 1"
+                android:textSize="18sp"
+                android:id="@+id/deskripsiDetail"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/warna4"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="95dp"
+                android:text="Buy Now"
+                android:id="@+id/btn_buy"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:backgroundTint="@color/warna3"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
